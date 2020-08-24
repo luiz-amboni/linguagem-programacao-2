@@ -1,33 +1,31 @@
-class ValidaIdade:
-
-    def verifica_idade(self, nome, idade):
-        if idade >= 18:
-            print("Maior idade !")
+class Pessoa:
+    def validar_idade(self, nome, idade):
+        if idade > 18:
+            print("Maior de idade")
         else:
-            print("Menor idade !")
+            print("Menor de idade")
 
-
-class MediaAlunos:
-    def media_final(self,nota1, nota2, nota3):
-        media_aluno=(nota1 + nota2 + nota3)/3
-        if media_aluno>=7:
-            print("Média: ", media_aluno, " | " , "Aprovado!")
+#Cálculo de média
+class Media:
+    def media_final(self, n1, n2, n3):
+        media = (n1+n2+n3)/3
+        if media >= 7:
+            print('Sua média foi de %.2f e você está: APROVADO!' %media)
         else:
-            print("Média: ", media_aluno, " | ", "Reprovado :(")
+            print('Sua média foi de %.2f e você está: REPROVADO!' %media)
 
+qnt_alunos = 5
 
-qt_alunos=4
-while qt_alunos!=-1:
-
-    nome_aluno=input("Digite o nome do aluno: ")
-    idade=int (input("Digite a idade do aluno: "))
-    nota1=float(input("Digite a primeira nota do aluno: "))
-    nota2=float(input("Digite a segunda nota do aluno: "))
-    nota3=float(input("Digite a terceira nota do aluno: "))
-    qt_alunos-=1
-
-    ver_idade = ValidaIdade()
-    ver_idade.verifica_idade(nome_aluno,idade)
-
-    Media_Alunos=MediaAlunos()
-    Media_Alunos.media_final(nota1,nota2,nota3)
+while qnt_alunos != 0:
+    nome = str (input("\nNome do aluno: "))
+    idade = int (input("Digite a idade do aluno: "))
+    n1 = float (input("Digite a primeira nota: "))
+    n2 = float (input("Digite a segunda nota: "))
+    n3 = float (input("Digite a terceira nota: "))
+    qnt_alunos = qnt_alunos - 1
+    print("\n")
+    maior_idade = Pessoa()
+    maior_idade.validar_idade(nome, idade)
+    media = Media()
+    media.media_final(n1,n2,n3)
+print ("Programa encerrado!")

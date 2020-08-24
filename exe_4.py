@@ -4,8 +4,10 @@ valor = int(input())
 print('Digite o preço')
 preco = int(input())
 
-desc=preco*0.2
+desc = int(input("Digite o valor do desconto: "))
+total = preco - desc
+print ('O preço com desconto é R${}'.format(total))
 
-calc = valor - (preco-desc)
+troco = valor - total
 
-print('O valor final é R${}'.format(calc))
+print('O valor do troco será R${}'.format(troco))

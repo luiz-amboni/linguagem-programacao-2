@@ -1,18 +1,18 @@
 class Validar:
+    def validar_numero(self, n1):
+        if n1 >= 0:
+            if n1 % 2 == 0:
+                print ("O número é positivo e par")
+            else:
+                print ("O número é positivo e ímpar")
+        else:
+            #validação de impares
+            if n1 % 2 == 0:
+                print ("O número é negativo e par")
+            else:
+                print ("O número é negativo e ímpar")
 
-    def valida_num(self, num):
-        if num>0 and num%2==0:
-            print("O número", num,"é positivo e par.")
+validar = Validar()
+num = int(input("Digite um numero: "))
 
-        if num<0 and num%2==0:
-            print("O número", num, "é negativo e par.")
-
-        if num<0 and num%2!=0:
-            print("O número", num, "é negativo e ímpar.")
-
-        if num>0 and num%2!=0:
-            print("O número", num, "é positivo e ímpar.")
-
-determinar=Validar()
-num=int(input("Digite um número: "))
-determinar.valida_num(num)
+validar.validar_numero(num)
