@@ -1,6 +1,3 @@
-"""
-30 - Crie um dict com 5 nomes e idades, crie um segundo dict duplicando os itens.
-"""
 
 import copy
 

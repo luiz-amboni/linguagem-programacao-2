@@ -1,7 +1,3 @@
-"""
-24 - Receba duas listas e exiba a união destas listas e a intercalação destas listas, isto
-é, 1º da 1ª lista, 1º da 2ª lista, 2º da 1ª lista, 2º da 2ª lista.
-"""
 
 
 lista1=[]

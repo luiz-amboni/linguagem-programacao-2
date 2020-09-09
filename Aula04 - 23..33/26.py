@@ -1,7 +1,3 @@
-"""
-26 - Faça um programa que receba duas listas e retorne True se são iguais ou False
-caso contrário, além do número de ocorrências do primeiro elemento da lista.
-"""
 
 lista1=[]
 lista2=[]

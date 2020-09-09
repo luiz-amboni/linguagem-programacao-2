@@ -1,10 +1,3 @@
-"""
-23 - Crie uma programa que recebe uma lista qualquer e:
-a. retorne o maior elemento 
-b. retorne a soma dos elementos 
-c. retorne o número de ocorrências do primeiro elemento da lista 
-d. retorne a média dos elementos
-"""
 
 lista = []
 contador = 5
