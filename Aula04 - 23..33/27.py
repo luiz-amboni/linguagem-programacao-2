@@ -1,5 +1,3 @@
-
-
 letras = [' ','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 numeros = []
 traduzidos = []
@@ -8,7 +6,7 @@ digitar = True
 
 while digitar == True:
     try:
-        msg = int(input("Para enviar, utilize o comando 'Enviar'.\nDigite um número: "))
+        msg = int(input("Para enviar, utilize o comando '-1'.\nDigite um número: "))
         numeros.append(msg)
 
         if msg == -1:
